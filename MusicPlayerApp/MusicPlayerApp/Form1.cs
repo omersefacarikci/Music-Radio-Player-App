@@ -54,7 +54,7 @@ namespace MusicPlayerApp
             }
         }
 
-        private void fýlebtn_Click(object sender, EventArgs e)
+        private void fÃ½lebtn_Click(object sender, EventArgs e)
         {
 
             OpenFileDialog ofd = new OpenFileDialog();
@@ -102,7 +102,7 @@ namespace MusicPlayerApp
 
         }
 
-        private void sesbarý_Paint(object sender, PaintEventArgs e)
+        private void sesbarÃ½_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -127,6 +127,8 @@ namespace MusicPlayerApp
                 progressBar1.Maximum = (int)axWindowsMediaPlayer1.Ctlcontrols.currentItem.duration;
                 if (!radyo)
                     timer1.Start();
+                else
+                    timer1.Stop();
             }
             else if (axWindowsMediaPlayer1.playState == WMPPlayState.wmppsPaused)
             {
@@ -191,7 +193,7 @@ namespace MusicPlayerApp
             else
             {
                 ApplyDarkTheme();
-                guna2Button3.Text = "Açýk Tema";
+                guna2Button3.Text = "AÃ§Ã½k Tema";
                 guna2Button3.BackColor = Color.White;
             }
             isDarkTheme = !isDarkTheme;
@@ -234,21 +236,21 @@ namespace MusicPlayerApp
         {
              { "Alem FM", "http://turkmedya.radyotvonline.com/turkmedya/alemfm.stream/playlist.m3u8" },
              { "Kral FM", "http://46.20.3.204:80" },
-             { "Power Türk", "http://icast.powergroup.com.tr/PowerTurk/mpeg/128/home" },
+             { "Power TÃ¼rk", "http://icast.powergroup.com.tr/PowerTurk/mpeg/128/home" },
              { "A SPOR RADYO", "https://trkvz-radyolar.ercdn.net/asporradyo/playlist.m3u8" },
              { "A HABER RADYO", "https://trkvz-radyolar.ercdn.net/ahaberradyo/playlist.m3u8" },
              { "A NEWS RADYO", "https://trkvz-radyolar.ercdn.net/anewsradyo/playlist.m3u8" },
              { "A PARA RADYO", "https://trkvz-radyolar.ercdn.net/apararadyo/playlist.m3u8\r\n" },
              { "TGRT FM", "https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fead000e2128.smil/playlist.m3u8" },
              { "TRT FM", "https://trt.radyotvonline.net/trtfm" },
-             { "Slow Türk", "https://r3.rocketcdn.com/slowturk/abr/playlist.m3u8" },
+             { "Slow TÃ¼rk", "https://r3.rocketcdn.com/slowturk/abr/playlist.m3u8" },
              { "Karadeniz Radyo", "http://radyo.yayin.com.tr:6134" },
              { "Fenomen", "http://fenomen.listenfenomen.com/fenomen/256/icecast.audio" },
-             { "Fenomen Türk", "http://fenomen.listenfenomen.com/fenomenturk/256/icecast.audio" },
+             { "Fenomen TÃ¼rk", "http://fenomen.listenfenomen.com/fenomenturk/256/icecast.audio" },
              { "Kral Pop", "http://radyo.yayin.com.tr:6134" },
-             { "Ankara Havasý", "http://37.247.98.8/listen.pls?sid=30" },
+             { "Ankara HavasÃ½", "http://37.247.98.8/listen.pls?sid=30" },
              { "Metro FM", " http://provisioning.streamtheworld.com/pls/METRO_FMAAC.pls" },
-             { "Damar Türk FM", "https://live.radyositesihazir.com:10997" },
+             { "Damar TÃ¼rk FM", "https://live.radyositesihazir.com:10997" },
              { "Lig Radyo-1", " https://ligradyo.radyotvonline.net/ligradyo" },
              { "Lig Radyo-2", "https://turkmedya.radyotvonline.com/turkmedya/ligradyo.stream/playlist.m3" },
              { "Lig Radyo-3", "http://46.20.3.246/stream/105/" },
@@ -318,15 +320,15 @@ namespace MusicPlayerApp
 
         }
 
-        private void fýlebtn_MouseEnter(object sender, EventArgs e)
+        private void fÃ½lebtn_MouseEnter(object sender, EventArgs e)
         {
-            fýlebtn.FillColor = Color.FromArgb(42, 45, 52);
+            fÃ½lebtn.FillColor = Color.FromArgb(42, 45, 52);
             guna2Panel1.FillColor = Color.ForestGreen;
             guna2Panel1.BackColor = Color.ForestGreen;
             guna2Panel1.BorderColor = Color.ForestGreen;
         }
 
-        private void fýlebtn_MouseLeave(object sender, EventArgs e)
+        private void fÃ½lebtn_MouseLeave(object sender, EventArgs e)
         {
             guna2Panel1.FillColor = Color.FromArgb(42, 45, 52);
             guna2Panel1.BackColor = Color.FromArgb(42, 45, 52);
